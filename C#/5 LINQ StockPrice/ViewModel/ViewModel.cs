@@ -8,7 +8,7 @@ namespace ATX_LINQ.ViewModel
 {
     class ViewModel
     {
-        public String Date { get; set; }
+        private String Date { get; set; }
         private double Open { get; set; }
         private double High { get; set; }
         private double Low { get; set; }

@@ -8,6 +8,11 @@ namespace ATX_LINQ.Model
 {
     public class StockModel : INotifyPropertyChanged
     {
+        private IList<StockModel> StockList = new List<StockModel>();
+
+        /*
+        List<StockModel> students = new List<StockModel>() {};
+        */
 
         public StockModel(String date, double open, double high, double low, double lastclose)
         {
@@ -17,18 +22,6 @@ namespace ATX_LINQ.Model
             Low = low;
             LastClose = lastclose;
         }
-
-        #region Test
-
-        public static IList<StockModel> Factory()
-        {
-            IList<StockModel> StockList = new List<StockModel>();
-
-            return StockList;
-        }
-
-        #endregion
-
 
 
         #region Property

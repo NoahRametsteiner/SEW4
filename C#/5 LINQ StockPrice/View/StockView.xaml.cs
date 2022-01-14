@@ -18,11 +18,8 @@ namespace ATX_LINQ.View
 {
     public partial class StockView : Window
     {
-        public StockView()
-        {
-            InitializeComponent();
-        }
-        
+        public StockView() {InitializeComponent();}
+
         #region CSV Import
 
         private void Import_Click(object sender, RoutedEventArgs e)
@@ -55,8 +52,10 @@ namespace ATX_LINQ.View
             {
                 string[] data = line.Split(';');
                 return new StockModel(data[0], Convert.ToDouble(data[1]), Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4]));
+
             });
         }
+
         #endregion
 
         #region Filter
