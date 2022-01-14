@@ -1,0 +1,39 @@
+Solution Design
+
+
+View 
+- MainWindow
+	- wie Mockup
+	Data Bindings:
+		- Liste
+	Commands:
+		- Import ausführen
+		- Filter anwenden
+			selber Command für alle Reihen
+		- < <= => > - in Box auswählbar
+
+ViewModel
+
+Properties:
+- StockModel Klasse
+- Filter Klasse
+
+Methoden:
+- InputFilter Methode
+	- Box-Auswahl als Parameter
+- AscendingFilter Methode
+- DescendingFilter Methode
+
+Commands:
+- Import
+- Exit
+(- Export)
+
+Model
+- StockModel
+	- Importes CSV als Liste speichern
+--------------------------------------------------------
+- Filter Klasse
+	- verlangte Filter durch Functions anwenden
+		- Input: Normale Liste
+		- Rückgabe: Gefilterte

@@ -1,0 +1,159 @@
+﻿<Window x:Class="WPFDemo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPF Demo" Height="572" Width="654">
+    
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0.0" Color="LightBlue" />
+            <GradientStop Offset="1.0" Color="LightGray" />
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <Window.Content>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Height="26" Name="toolBar1" VerticalAlignment="Top">
+                <MenuItem Header="Datei">
+                    <MenuItem Header="Öffnen"></MenuItem>
+                    <MenuItem Header="Speichern"></MenuItem>
+                    <MenuItem Header="Ende"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Bearbeiten">
+
+                </MenuItem>
+                <MenuItem Header="Info">
+
+                </MenuItem>
+            </Menu>
+            
+            <StatusBar DockPanel.Dock="Bottom" Height="31" Name="statusBar1">
+                <StatusBarItem>
+                    <Label>Statuslabel</Label>
+                </StatusBarItem>
+            </StatusBar>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="256.25" />
+                    <RowDefinition Height="282.532*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="305" />
+                    <ColumnDefinition Width="326.464*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Grid.Row="0">
+                    <ListBox Height="145" Margin="10" Name="lstList">
+                    </ListBox>
+
+                    <Button Margin="10" Click="Button_Click_1">Füllen</Button>
+                    <Button Margin="10" Click="Button_Click">Löschen</Button>
+                </StackPanel>
+                
+                <DockPanel Grid.Column="1" Grid.Row="0">
+                    <TreeView DockPanel.Dock="Left" Name="tree" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+                    </TreeView>
+                    <Button Name="fillTree" Click="fillTree_Click">Füllen</Button>
+                    <Button DockPanel.Dock="Right" Name="delTree" Click="delTree_Click">Löschen</Button>
+                </DockPanel>
+                
+                <GridSplitter Grid.RowSpan="2" Background="AliceBlue" Width="5" />
+                
+                <TabControl Grid.Column="0" Grid.Row="1" TabStripPlacement="Left" FlowDirection="LeftToRight" HorizontalAlignment="Stretch">
+                    <TabItem Header="Überblick" ToolTip="Überblick">
+                        <TabItem.LayoutTransform>
+                            <RotateTransform Angle="270"/>
+                        </TabItem.LayoutTransform>
+                        
+                        <StackPanel>
+                            <ComboBox Height="35" SelectionChanged="ComboBox_SelectionChanged">
+                                <CheckBox>Auswahl 1</CheckBox>
+                                <CheckBox>Auswahl 2</CheckBox>
+                                <CheckBox>Auswahl 3</CheckBox>
+                                <CheckBox>Auswahl 4</CheckBox>
+                                <CheckBox>Auswahl 5</CheckBox>
+                            </ComboBox>
+                        </StackPanel>
+                        
+                    </TabItem>
+                    <TabItem Header="Einstellungen" ToolTip="Einstellungen" ContentStringFormat="">
+                        <TabItem.LayoutTransform>
+                            <RotateTransform Angle="270"/>
+                        </TabItem.LayoutTransform>
+
+                        <StackPanel>
+                            <Button>
+                                <Button.Content>
+                                    <Ellipse Width="30" Height="30" Stroke="LightPink" StrokeThickness="3" />
+                                </Button.Content>
+                            </Button>
+                            
+                            <Ellipse Width="60" Height="50" Stroke="Blue" StrokeThickness="5" Margin="10"/>
+                            
+                        </StackPanel>
+                    </TabItem>
+                    
+                    <TabItem Header="Schriften" ToolTip="Schriften" ContentStringFormat="">
+                        <TabItem.LayoutTransform>
+                            <RotateTransform Angle="270"/>
+                        </TabItem.LayoutTransform>
+                        
+                        <ComboBox Name="cbxFonts" Height="30" ItemsSource="{Binding}"></ComboBox>
+                    </TabItem>
+                    
+                </TabControl>
+                
+                <Rectangle Grid.Column="1" Grid.Row="1" Stroke="Black" StrokeThickness="2" RadiusX="10" RadiusY="10" Margin="10">
+                </Rectangle>
+                
+                <StackPanel Grid.Column="1" Grid.Row="1" Margin="20">
+                    <Expander Header="Auswahl 1" Name="expander1" Margin="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <CheckBox Margin="4" Content="Option 1" />
+                            <CheckBox Margin="4" Content="Option 2" />
+                        </StackPanel>
+                    </Expander>
+                    <Expander Header="Auswahl 2" Name="expander2" Margin="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Button Margin="4">Button 1</Button>
+                            <Button Margin="4">Button 2</Button>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </Grid>
+            
+        </DockPanel>
+    </Window.Content>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Red" />
+                </Trigger>
+
+                <!--Trigger für MouseEnter-->
+                <EventTrigger RoutedEvent="Button.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize" To="25" Duration="0:0:0.1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+
+                <!--Trigger für MouseLeave-->
+                <EventTrigger RoutedEvent="Button.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize" To="12" Duration="0:0:0.1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+</Window>

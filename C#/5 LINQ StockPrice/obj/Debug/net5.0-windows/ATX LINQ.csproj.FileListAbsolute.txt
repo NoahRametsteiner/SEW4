@@ -1,0 +1,44 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.deps.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.runtimeconfig.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.runtimeconfig.dev.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ref\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\bin\Debug\net5.0-windows\ATX LINQ.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\View\StockView.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ_MarkupCompile.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ_MarkupCompile.lref
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\View\StockView.baml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.g.resources
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.AssemblyInfoInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.AssemblyInfo.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ref\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\ATX LINQ\obj\Debug\net5.0-windows\ATX LINQ.genruntimeconfig.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\View\StockView.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ_MarkupCompile.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ_MarkupCompile.lref
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ref\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.deps.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.runtimeconfig.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.runtimeconfig.dev.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ref\ATX LINQ.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\bin\Debug\net5.0-windows\ATX LINQ.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\View\StockView.baml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.g.resources
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.AssemblyInfoInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.AssemblyInfo.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\5 LINQ StockPrice\obj\Debug\net5.0-windows\ATX LINQ.genruntimeconfig.cache

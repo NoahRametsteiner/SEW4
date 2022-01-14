@@ -1,0 +1,46 @@
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.exe
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.deps.json
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.runtimeconfig.json
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.runtimeconfig.dev.json
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.dll
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\ref\UI MVVM.dll
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.pdb
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.csproj.AssemblyReference.cache
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\View\StudentsView.g.cs
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM_MarkupCompile.cache
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM_MarkupCompile.lref
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\View\StudentsView.baml
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.g.resources
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.AssemblyInfoInputs.cache
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.AssemblyInfo.cs
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.csproj.CoreCompileInputs.cache
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.dll
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\ref\UI MVVM.dll
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.pdb
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.genruntimeconfig.cache
+C:\Users\tosch\source\repos\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.deps.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.runtimeconfig.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.runtimeconfig.dev.json
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\ref\UI MVVM.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\bin\Debug\net5.0-windows\UI MVVM.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\View\StudentsView.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM_MarkupCompile.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM_MarkupCompile.lref
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\View\StudentsView.baml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.g.resources
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.AssemblyInfoInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.AssemblyInfo.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\ref\UI MVVM.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\UI MVVM\UI MVVM\obj\Debug\net5.0-windows\UI MVVM.genruntimeconfig.cache
