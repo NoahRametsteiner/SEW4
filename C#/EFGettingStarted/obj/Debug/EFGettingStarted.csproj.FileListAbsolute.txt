@@ -1,0 +1,12 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EFGettingStarted.exe.config
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EFGettingStarted.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EFGettingStarted.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\obj\Debug\EFGettingStarted.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\obj\Debug\EFGettingStarted.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\obj\Debug\EFGettingStarted.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\obj\Debug\EFGettingStarted.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EntityFramework.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EntityFramework.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFGettingStarted\obj\Debug\EFGettingStarted.csproj.CopyComplete

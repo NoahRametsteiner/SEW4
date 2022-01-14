@@ -27,7 +27,7 @@ namespace ATX_LINQ.View
             // Create OpenFileDialog
             Microsoft.Win32.OpenFileDialog openFileDlg = new Microsoft.Win32.OpenFileDialog();
             openFileDlg.DefaultExt = ".csv";
-            openFileDlg.Filter = "Text documents (.csv)|*.csv";
+            openFileDlg.Filter = "CSV (.csv)|*.csv";
             openFileDlg.InitialDirectory = @"C:\Temp\";
 
             Nullable<bool> result = openFileDlg.ShowDialog();
@@ -37,8 +37,6 @@ namespace ATX_LINQ.View
                 InitializeComponent();
                 ListViewStock.ItemsSource = ReadCSV(openFileDlg.FileName);
             }
-            
-
         }
         #endregion
 
@@ -58,27 +56,27 @@ namespace ATX_LINQ.View
 
         #endregion
 
-        #region Filter
+        #region Filter (Test)
 
         private void Date_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("test1");
+            
         }
         private void Open_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("test2");
+            
         }
         private void High_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("test3");
+            
         }
         private void Low_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("test4");
+            
         }
         private void LastClose_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("test5");
+            
         }
 
         #endregion
