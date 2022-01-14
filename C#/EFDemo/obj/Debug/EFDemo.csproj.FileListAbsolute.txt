@@ -1,0 +1,12 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EFDemo.exe.config
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EFDemo.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EFDemo.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EntityFramework.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EntityFramework.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\obj\Debug\EFDemo.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\obj\Debug\EFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\obj\Debug\EFDemo.csproj.CopyComplete
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\obj\Debug\EFDemo.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\EFDemo\obj\Debug\EFDemo.pdb
