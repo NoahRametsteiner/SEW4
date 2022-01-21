@@ -1,0 +1,8 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\EF, Entityklasse, Context, DB Zugriff.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\View\Window.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\App.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\EF, Entityklasse, Context, DB Zugriff_MarkupCompile.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\EF, Entityklasse, Context, DB Zugriff_MarkupCompile.lref
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\View\View.g.cs
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\EF, Entityklasse, Context, DB Zugriff.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\EF, Entityklasse, Context, DB Zugriff\obj\Debug\EF, Entityklasse, Context, DB Zugriff.pdb

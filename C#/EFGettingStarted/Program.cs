@@ -27,7 +27,7 @@ namespace EFGettingStarted
             User usr = new User() { Name = "Sachin", Email = "sachin@gmail.com" };
             try
             {
-                using (var ctx = new EFContext())
+                using (var ctx = new EFContext()) //Searches User By Primary Key
                 {
                     ctx.Users.Add(usr);
                     ctx.SaveChanges();
@@ -38,7 +38,7 @@ namespace EFGettingStarted
                 Console.WriteLine(ex.Message);
             }
         }
-
+        
         private static void findUser(int id)
         {
             Console.WriteLine("finding " + id);

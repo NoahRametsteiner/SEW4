@@ -7,9 +7,9 @@ using EFGettingStarted.DBContext;
 
 namespace EFGettingStarted.Model
 {
-    public class User
+    public class User //Class = Tabelles,, Properties = Rows => ORM Object Relation Mapping
     {
-        public int UserID { get; set; }
+        public int UserID { get; set; } // Creates Property With ID
         public string Name { get; set; }
         public string Email { get; set; }
     }
