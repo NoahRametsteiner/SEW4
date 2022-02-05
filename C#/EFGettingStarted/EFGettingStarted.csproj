@@ -54,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBContext\EFContext.cs" />
-    <Compile Include="Model\Model.cs" />
+    <Compile Include="DBContext\UserInitializer.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\AccessData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -13,10 +13,11 @@ namespace EFGettingStarted
         static void Main(string[] args)
         {
             addUser();
-            findUser(1);
-            editUser(1);
-            deleteUser(1);
-            findUser(1);
+            //findUser(1);
+            //editUser(1);
+            //deleteUser(1);
+            //findUser(1);
+            findUserNot();
 
             Console.WriteLine("Press any key to close");
             Console.ReadKey();
@@ -119,5 +120,6 @@ namespace EFGettingStarted
             findUser(id);
 
         }
+
     }
 }

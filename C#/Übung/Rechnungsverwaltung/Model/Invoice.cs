@@ -11,8 +11,8 @@ namespace Rechnungsverwaltung.Model
     class Invoice : INotifyPropertyChanged
     {
         public int id { get; set; }
-        public string customername { get; set; }
-        public string customeraddress { get; set; }
+        public string customername { get; set; } = string.Empty;
+        public string customeraddress { get; set; } = string.Empty;
         public double amount { get; set; }
         public DateTime invoicedate { get; set; }
         public int vat { get; set; }

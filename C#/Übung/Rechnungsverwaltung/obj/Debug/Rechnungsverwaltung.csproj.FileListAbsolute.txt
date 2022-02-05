@@ -20,3 +20,4 @@ C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\obj\Debug\Rechnu
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.csproj.CopyComplete
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.exe
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.csproj.AssemblyReference.cache

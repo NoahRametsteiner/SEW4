@@ -9,6 +9,12 @@ namespace EFGettingStarted.DBContext
 {
     class EFContext : DbContext
     {
+        public EFContext()
+        {
+            //Database.SetInitializer<EFContext>(new User());
+            //Database.SetInitializer<EFContext>(new DropCreateDatabaseIfModelChanges<EFContext>());
+        }
+
         public DbSet<User> Users { get; set; }
 
 
