@@ -1,0 +1,10 @@
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\bin\Debug\Windows Firewall.exe.config
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\bin\Debug\Windows Firewall.exe
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\bin\Debug\Windows Firewall.pdb
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\bin\Debug\WindowsFirewallHelper.dll
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\bin\Debug\WindowsFirewallHelper.xml
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\obj\Debug\Windows Firewall.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\obj\Debug\Windows Firewall.csproj.CopyComplete
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\obj\Debug\Windows Firewall.exe
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\obj\Debug\Windows Firewall.pdb
+C:\Users\Notsch\Desktop\A-L-L\Repo\SEW4\C#\Übung\Windows Firewall\Windows Firewall\obj\Debug\Windows Firewall.csproj.AssemblyReference.cache
