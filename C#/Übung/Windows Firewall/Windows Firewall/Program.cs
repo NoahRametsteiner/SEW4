@@ -23,7 +23,7 @@ namespace WindowsFirewallHelper
                 var rule = FirewallManager.Instance.CreateApplicationRule(
                     @"MyApp Rule",
                     FirewallAction.Block,
-                    @"C:\Users\Notsch\Downloads\vs_Enterprise.exe"
+                    @"C:\Users\Notsch\Downloads\BetterDiscord-Windows.exe"
                 );
                 rule.Direction = FirewallDirection.Outbound;
                 FirewallManager.Instance.Rules.Add(rule);
