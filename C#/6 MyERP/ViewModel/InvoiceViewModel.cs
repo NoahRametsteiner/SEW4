@@ -10,6 +10,7 @@ using System.Windows.Input;
 using MyERP.Context;
 using MyERP.Model;
 using System.Data.Entity;
+using System.Drawing;
 using System.Windows.Documents;
 using System.IO;
 using System.Windows;
@@ -17,6 +18,8 @@ using System.Windows.Markup;
 using System.Xml;
 using MyERP.Printing;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
+using QRCoder;
 
 namespace MyERP.ViewModel
 {
@@ -80,6 +83,10 @@ namespace MyERP.ViewModel
                 invoicePrintData.Positions = SelectedInvoice.Positions;
                 document.DataContext = invoicePrintData;
 
+                invoicePrintData.BarCode = CreateQrCode("123");
+                string qr = CurrentInvoice.ID.ToString();
+                invoicePrintData.QrCode = CreateQrCode(qr);
+
                 PrintDialog printDialog = new PrintDialog();
                 if (printDialog.ShowDialog() == true)
                     printDialog.PrintDocument((document as IDocumentPaginatorSource).DocumentPaginator, "Invoice");
@@ -87,6 +94,7 @@ namespace MyERP.ViewModel
 
 
         }
+
         #endregion
 
         #region methods
@@ -140,6 +148,21 @@ namespace MyERP.ViewModel
             }
             ;
         }
+
+        private BitmapSource CreateQrCode(string toCode)
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(toCode, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap result = qrCode.GetGraphic(20);
+
+            return System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                result.GetHbitmap(),
+                IntPtr.Zero,
+                Int32Rect.Empty,
+                BitmapSizeOptions.FromEmptyOptions());
+        }
+
         #endregion
 
         #region commands

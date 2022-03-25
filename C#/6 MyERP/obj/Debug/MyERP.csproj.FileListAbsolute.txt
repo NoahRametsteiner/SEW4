@@ -143,3 +143,4 @@ C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.csproj.CoreCompileI
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.csproj.CopyComplete
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.exe
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\QRCoder.dll

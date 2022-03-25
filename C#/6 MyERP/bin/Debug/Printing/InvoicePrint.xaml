@@ -32,6 +32,10 @@
                 <TextBlock />
                 <TextBlock />
 
+                <Image Source="{Binding QrCode}" 
+                       Width="100" 
+                       Height="100"/>
+
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Kopie" FontSize="16" FontWeight="Bold" />
                     <TextBlock Text="Rechnungsbetrag: " FontSize="16" FontWeight="Normal" Margin="0,0,0,20" HorizontalAlignment="Right" />
@@ -41,7 +45,7 @@
             </StackPanel>
 
             <ListView Grid.Row="1" ItemsSource="{Binding Path=Positions}" HorizontalAlignment="Center" >
-                <ListView.View ItemStyle-HorizontalAlign="Left">
+                <ListView.View>
                     <GridView>
                         <GridViewColumn Header="ItemNr" Width="150" DisplayMemberBinding="{Binding Path=ItemNr}" />
                         <GridViewColumn Header="Price" Width="150" DisplayMemberBinding="{Binding Path=Price}" />

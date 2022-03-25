@@ -32,6 +32,10 @@
                 <TextBlock />
                 <TextBlock />
 
+                <Image Source="{Binding QrCode}" 
+                       Width="100" 
+                       Height="100"/>
+
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Kopie" FontSize="16" FontWeight="Bold" />
                     <TextBlock Text="Rechnungsbetrag: " FontSize="16" FontWeight="Normal" Margin="0,0,0,20" HorizontalAlignment="Right" />
