@@ -126,7 +126,6 @@ C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\EntityFramework.dll
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\EntityFramework.xml
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.csproj.AssemblyReference.cache
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MainWindow.g.cs
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\View\InvoiceView.g.cs
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\App.g.cs
@@ -144,3 +143,10 @@ C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.csproj.CopyComplete
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.exe
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.pdb
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\QRCoder.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\6 MyERP\obj\Debug\MyERP.csproj.AssemblyReference.cache

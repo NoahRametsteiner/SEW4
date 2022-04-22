@@ -84,8 +84,8 @@ namespace MyERP.ViewModel
                 document.DataContext = invoicePrintData;
 
                 invoicePrintData.BarCode = CreateQrCode("123");
-                string qr = CurrentInvoice.ID.ToString();
-                invoicePrintData.QrCode = CreateQrCode(qr);
+                //string qr = CurrentInvoice.ID.ToString();
+                //invoicePrintData.QrCode = CreateQrCode(qr);
 
                 PrintDialog printDialog = new PrintDialog();
                 if (printDialog.ShowDialog() == true)
