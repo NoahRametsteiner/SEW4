@@ -31,8 +31,6 @@ namespace Demo_MQTT
             var options = new MqttClientOptionsBuilder()
                 .WithClientId("Client1")
                 .WithTcpServer("localhost")
-                //.WithCredentials("bud", "%spencer%")
-                //.WithTls()
                 .WithCleanSession()
                 .Build();
 
@@ -42,23 +40,13 @@ namespace Demo_MQTT
 
                 //if (TOPICS)
 
-                //Console.Write("### RECEIVED APPLICATION MESSAGE ###");
-                //Console.Write($"+ Topic = {e.ApplicationMessage.Topic}");
-                //Console.Write($"+ Payload = {Encoding.UTF8.GetString(e.ApplicationMessage.Payload)}");
-                //Console.Write($"+ QoS = {e.ApplicationMessage.QualityOfServiceLevel}");
-                //Console.Write($"+ Retain = {e.ApplicationMessage.Retain}");
-                //Console.WriteLine();
-
                 Console.Write(date1.ToString());
                 Console.Write($" Topic={e.ApplicationMessage.Topic};");
                 Console.Write($" Message={Encoding.UTF8.GetString(e.ApplicationMessage.Payload)};");
                 Console.Write($" QoS={e.ApplicationMessage.QualityOfServiceLevel};");
                 Console.WriteLine();
 
-
                 await mqttClient.PublishAsync(response, CancellationToken.None); // Since 3.0.5 with CancellationToken
-                //SendResponse();
-
             });
 
             mqttClient.UseConnectedHandler(async e =>
@@ -75,17 +63,5 @@ namespace Demo_MQTT
             await mqttClient.ConnectAsync(options, CancellationToken.None); // Since 3.0.5 with CancellationToken
 
         }
-
-        public async void SendResponse()
-        {
-            var message = new MqttApplicationMessageBuilder()
-                .WithTopic("ug/temp")
-                .WithPayload("Hello World")
-                .Build();
-            
-            await mqttClient.PublishAsync(message, CancellationToken.None); // Since 3.0.5 with CancellationToken
-            Console.WriteLine("asd");
-        }
-
     }
 }
