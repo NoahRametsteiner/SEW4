@@ -14,20 +14,6 @@
 	>mosquitto_pub -t ug/humidity -m "Test"
 	>mosquitto_pub -t og/humidity -m "Test"
 
-- Arbeiten Sie mit den Wildcards / Platzhaltern:
-
-    - Starten Sie einen Subscriber, der alle Messages, die an ug oder Subtopics geschickt werden, empfängt
-
-    	>mosquitto_sub -t ug/#
-
-    - Starten Sie einen Subscriber, der alle Messages, die an an ein Topic mit einer Temperatur geschickt werden, egal ob im ug oder og und egal wie viele Topics noch davor sind.
-
-    	>mosquitto_sub -t +/Temperatur
-
-    - Starten Sie einen Subscriber, der alle Messages, die an an ein Topic mit einer Temperatur geschickt werden, egal ob im ug oder og aber es darf nur ein Topic davor sein.
-
-    	d
-
 - Legen Sie eine Retained Message bei einem Publisher fest (mosquitto_pub -r) starten Sie einen neuen Subcriber, der exakt dieses Topic konsomiert
 
 	> mosquitto_sub -t temperature/#
@@ -45,35 +31,32 @@
 	> Beenden Sie den 2. Subscriber mit Strg+C
 
 - Senden Sie Messages mit allen 3 unterschiedlichen QoS Level:
-
-	- die Einstellung des QoS Level gilt immer nur vom jeweiligen Publisher / Subscriber zum Broker (nicht direkt vom Publisher zum Subscriber).
-
-		d
+- die Einstellung des QoS Level gilt immer nur vom jeweiligen Publisher / Subscriber zum Broker (nicht direkt vom Publisher zum Subscriber).
 
 	- Stellen Sie den Subscriber auf QoS = 0 und stellen Sie den Subscriber in den debug mode (um mehr Infos zu erhalten)
 
-		d
+		//
 
 	- Schicken Sie eine Message vom Publisher mit QoS = 2, was passiert am Subscriber?
 
-		d
-	
+		
+			
 	- Stellen Sie den Subscriber auf QoS = 1 und schicken Sie wieder eine Message mit QoS = 2, was passiert am Subscriber?
 
-		d
+		//
 
 	- Stellen Sie den Subscriber auf QoS = 2 und schicken Sie wieder eine Message mit QoS = 2, was passiert am Subscriber?
 
-		d
+		//
 
 	- Erstellen Sie ein .NET Programm, welches per MQTT alle Messages von og/ empfängt
 
-		d
+		//
 
 	- Geben Sie die Messages auf der Console aus: dd.MM.yyyy HH:mm:ss: Topic Client Message
 
-		d
+		//
 
 	- Ergänzen sie eine EF Anbindung und speichern Sie die empfangenen Messages in einer DB
 
-		d
+		//

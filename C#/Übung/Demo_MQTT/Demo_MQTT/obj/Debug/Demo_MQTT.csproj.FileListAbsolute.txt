@@ -1,0 +1,9 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\bin\Debug\Demo_MQTT.exe.config
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\bin\Debug\Demo_MQTT.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\bin\Debug\Demo_MQTT.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\bin\Debug\MQTTnet.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\obj\Debug\Demo_MQTT.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\obj\Debug\Demo_MQTT.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\obj\Debug\Demo_MQTT.csproj.CopyComplete
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\obj\Debug\Demo_MQTT.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Demo_MQTT\Demo_MQTT\obj\Debug\Demo_MQTT.pdb
