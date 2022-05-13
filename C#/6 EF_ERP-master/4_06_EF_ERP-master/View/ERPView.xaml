@@ -1,0 +1,153 @@
+﻿<Window x:Class="_4_06_EF_ERP.View.ERPView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_4_06_EF_ERP.View"
+        xmlns:src="clr-namespace:_4_06_EF_ERP.ViewModel"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
+        mc:Ignorable="d"
+        Title="ERPView" Height="800" Width="1200">
+
+    <Window.DataContext>
+        <src:ERPViewModel></src:ERPViewModel>
+    </Window.DataContext>
+
+    <DockPanel>
+        <ribbon:Ribbon DockPanel.Dock="Top">
+            <Ribbon.HelpPaneContent>
+                <RibbonButton SmallImageSource="/Images/help-circle.png" />
+            </Ribbon.HelpPaneContent>
+
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu Label="Test">
+                    <RibbonApplicationMenuItem Header="Info" ImageSource="/Images/information.png" />
+                    <RibbonApplicationMenuItem Header="Drucken" ImageSource="/Images/printer.png" />
+                    <RibbonApplicationMenuItem Header="Exit" ImageSource="/Images/exit-to-app.png" />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <ribbon:Ribbon.QuickAccessToolBar>
+                <ribbon:RibbonQuickAccessToolBar>
+                    <ribbon:RibbonButton SmallImageSource="/Images/printer.png"></ribbon:RibbonButton>
+                    <ribbon:RibbonButton SmallImageSource="/Images/exit-to-app.png"></ribbon:RibbonButton>
+                </ribbon:RibbonQuickAccessToolBar>
+            </ribbon:Ribbon.QuickAccessToolBar>
+
+            <ribbon:RibbonTab Header="Anwendung">
+                <ribbon:RibbonGroup Header="Allgemein">
+                    <ribbon:RibbonMenuButton Label="Informationen" LargeImageSource="/Images/information.png"></ribbon:RibbonMenuButton>
+                    <ribbon:RibbonMenuButton Label="Exit" LargeImageSource="/Images/exit-to-app.png"></ribbon:RibbonMenuButton>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+            <ribbon:RibbonTab Header="Druck">
+                <ribbon:RibbonGroup Header="Drucken">
+                    <ribbon:RibbonButton Label="Drucken" LargeImageSource="/Images/printer.png" Command="{Binding Path=PrintCommand}"/>
+                    <ribbon:RibbonMenuButton Label="Druckvorschau" LargeImageSource="/Images/printer-eye.png"/>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+            <ribbon:RibbonTab Header="Rechnung">
+                <ribbon:RibbonGroup Header="Eingabe">
+                    <StackPanel Margin="10px">
+                        <Label>Name</Label>
+                        <TextBox Width="80" Text="{Binding Path=InvoiceToAdd.CustomerName}"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Margin="10px">
+                        <Label>Adresse</Label>
+                        <TextBox Width="80" Text="{Binding Path=InvoiceToAdd.CustomerAddress}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="10px">
+                        <Label>Anzahl</Label>
+                        <TextBox Width="40" Text="{Binding Path=InvoiceToAdd.Amount}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="10px">
+                        <Label>Vat</Label>
+                        <TextBox Width="40" Text="{Binding Path=InvoiceToAdd.Vat}"></TextBox>
+                    </StackPanel>
+                </ribbon:RibbonGroup>
+                <ribbon:RibbonGroup Header="Aktionen">
+                    <StackPanel Margin="5px">
+                        <ribbon:RibbonButton Label="Hinzufügen" LargeImageSource="/Images/upload.png" Command="{Binding Path=AddCommand}"></ribbon:RibbonButton>
+                    </StackPanel>
+                    <StackPanel Margin="5px">
+                        <ribbon:RibbonButton Label="Entfernen" LargeImageSource="/Images/delete.png" Command="{Binding Path=RemoveCommand}"></ribbon:RibbonButton>
+                    </StackPanel>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+        </ribbon:Ribbon>
+        <Grid>
+            <TabControl>
+                <TabItem Header="General">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"></RowDefinition>
+                            <RowDefinition Height="0.5*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <ListView Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Path=Invoices}" SelectedItem="{Binding Path=SelectedInvoice}">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Path=CustomerName}" />
+                                    <GridViewColumn Header="Address" Width="150" DisplayMemberBinding="{Binding Path=CustomerAddress}" />
+                                    <GridViewColumn Header="Amount" Width="150" DisplayMemberBinding="{Binding Path=Amount}" />
+                                    <GridViewColumn Header="Date" Width="150" DisplayMemberBinding="{Binding Path=InvoiceDate}" />
+                                    <GridViewColumn Header="Vat" Width="150" DisplayMemberBinding="{Binding Path=Vat}" />
+                                </GridView>
+                            </ListView.View>
+                            <ListView.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Remove" Command="{Binding Path=RemoveCommand}"></MenuItem>
+                                </ContextMenu>
+                            </ListView.ContextMenu>
+                        </ListView>
+
+                        <ListView Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Path=SelectedInvoice.Positions}" SelectionMode="Multiple" SelectedItem="SelectedPositions" SelectionChanged="selectionChanged">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="ItemNr" Width="150" DisplayMemberBinding="{Binding Path=ItemNr}" />
+                                    <GridViewColumn Header="Price" Width="150" DisplayMemberBinding="{Binding Path=Price}" />
+                                    <GridViewColumn Header="Qty" Width="150" DisplayMemberBinding="{Binding Path=Qty}" />
+                                </GridView>
+                            </ListView.View>
+                            <ListView.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Remove" Command="{Binding Path=RemoveCommand}"></MenuItem>
+                                    <MenuItem Header="Send" Command="{Binding Path=SendCommand}"></MenuItem>
+                                </ContextMenu>
+                            </ListView.ContextMenu>
+                        </ListView>
+
+                        <lvc:CartesianChart Series="{Binding SeriesCollectionInvoiceAmount}" LegendLocation="Right" Grid.Row="0" Grid.Column="1">
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Title="Betrag der Rechnung" LabelFormatter="{Binding YFormatterInvoiceAmount}"></lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Title="Rechnungsdatum" LabelFormatter="{Binding XFormatterInvoiceAmount}"></lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+                        </lvc:CartesianChart>
+
+                        <lvc:PieChart Series="{Binding SeriesAmountInvoicePosition}" Grid.Row="1" Grid.Column="1" LegendLocation="Bottom">
+                        </lvc:PieChart>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Chart">
+                    <lvc:CartesianChart Grid.Row="1" Series="{Binding SeriesCollectionBubbleChart}">
+                        <lvc:CartesianChart.AxisX>
+                            <lvc:Axis Title="Rechnungsdatum" LabelFormatter="{Binding XFormatterInvoiceAmount}"></lvc:Axis>
+                        </lvc:CartesianChart.AxisX>
+                        <lvc:CartesianChart.AxisY>
+                            <lvc:Axis Title="Betrag der Rechnung" LabelFormatter="{Binding YFormatterInvoiceAmount}"></lvc:Axis>
+                        </lvc:CartesianChart.AxisY>
+                    </lvc:CartesianChart>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </DockPanel>
+</Window>

@@ -40,3 +40,5 @@ C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwalt
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.csproj.CopyComplete
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.exe
 C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwaltung\obj\Debug\Rechnungsverwaltung.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwaltung\bin\Debug\MQTTnet.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\Rechnungsverwaltung\Rechnungsverwaltung\bin\Debug\QRCoder.dll

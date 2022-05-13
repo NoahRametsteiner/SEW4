@@ -36,6 +36,7 @@ namespace Rechnungsverwaltung.ViewModel
 
         public ICommand AddCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
+        public ICommand SendCommand { get; set; }
 
         public RechnungenViewModel()
         {
@@ -80,7 +81,11 @@ namespace Rechnungsverwaltung.ViewModel
             }
             );
 
-           
+            SendCommand = new RelayCommand(e =>
+            {
+                
+            });
+
             DeleteCommand = new RelayCommand(e =>
             {
                 
