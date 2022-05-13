@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
-using _4_06_EF_ERP.Model;
+﻿using System.Data.Entity;
+using MyERP.Model;
 
-namespace _4_06_EF_ERP.Context
+namespace MyERP.Context
 {
     class InvoiceContext: DbContext
     {

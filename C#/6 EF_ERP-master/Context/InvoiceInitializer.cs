@@ -1,14 +1,11 @@
-﻿using _4_06_EF_ERP.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyERP.Model;
 
-namespace _4_06_EF_ERP.Context
+namespace MyERP.Context
 {
-    class InvoiceInitializer : DropCreateDatabaseIfModelChanges<InvoiceContext>
+    class InvoiceInitializer : DropCreateDatabaseAlways<InvoiceContext>
     {
         protected override void Seed(InvoiceContext context)
         {

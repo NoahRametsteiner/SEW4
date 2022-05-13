@@ -63,5 +63,21 @@ namespace Demo_MQTT
             await mqttClient.ConnectAsync(options, CancellationToken.None); // Since 3.0.5 with CancellationToken
 
         }
+
+        public async Task<bool> SendMessage(string payload, string topic)
+        {
+            var message = new MqttApplicationMessageBuilder()
+                .WithTopic(topic)
+                .WithPayload(payload)
+                .Build();
+
+            if (!mqttClient.IsConnected)
+            {
+                return false;
+            }
+
+            await mqttClient.PublishAsync(message, CancellationToken.None); // Since 3.0.5 with CancellationToken
+            return true;
+        }
     }
 }

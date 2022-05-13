@@ -7,13 +7,14 @@ using static Demo_MQTT.MyMqttClient;
 
 namespace Demo_MQTT
 {
-    class Program : MyMqttClient
+    class  Program : MyMqttClient
     {
         static void Main(string[] args)
         {
-            MyMqttClient newClient = new MyMqttClient();
-            newClient.Init();
-            Console.ReadKey();
+            var mqttClient = new MyMqttClient();
+            mqttClient.Init();
+            var sendtask = mqttClient.SendMessage("Inhalt", "topic/test");
+            sendtask.Wait();
         }
     }
 }

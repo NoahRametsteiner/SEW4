@@ -1,38 +1,38 @@
-﻿using _4_06_EF_ERP.Context;
-using _4_06_EF_ERP.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Data.Entity;
-using System.Windows.Input;
-using _4_06_EF_ERP.Logic;
-using System.Windows.Documents;
-using System.IO;
-using System.Windows.Markup;
-using System.Xml;
-using _4_06_EF_ERP.Printing;
-using System.Windows.Controls;
-using System.Windows.Media.Imaging;
 using System.Drawing;
 using System.Drawing.Imaging;
-using QRCoder;
+using System.IO;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Markup;
+using System.Windows.Media.Imaging;
+using System.Xml;
 using LiveCharts;
-using LiveCharts.Wpf;
-using LiveCharts.Defaults;
 using LiveCharts.Configurations;
+using LiveCharts.Defaults;
+using LiveCharts.Wpf;
+using MyERP.Context;
+using MyERP.Logic;
+using MyERP.Model;
 using MyERP.MQTT;
+using MyERP.Printing;
+using QRCoder;
 
-namespace _4_06_EF_ERP.ViewModel
+namespace MyERP.ViewModel
 {
     class ERPViewModel : INotifyPropertyChanged
     {
+        private const string MQTTclientID = "Client1";
+        private const string MQTTtcpServer = "localhost";
+        private const int MQTTport = 1883;
+
         public IList<Invoice> Invoices
         {
             get
@@ -181,7 +181,7 @@ namespace _4_06_EF_ERP.ViewModel
         {
 
             Client Client = new Client();
-            Client.Init();
+            Client.Init(MQTTclientID, MQTTtcpServer, MQTTport);
 
             AddCommand = new RelayCommand(e =>
             {
@@ -228,7 +228,11 @@ namespace _4_06_EF_ERP.ViewModel
 
             SendCommand = new RelayCommand(e =>
             {
-                Console.WriteLine("D");
+                Client.SendInvoice(SelectedInvoice);
+            });
+
+            SendAllCommand = new RelayCommand(e =>
+            {
                 Client.SendInvoice(SelectedInvoice);
             });
 
@@ -283,6 +287,7 @@ namespace _4_06_EF_ERP.ViewModel
         public ICommand AddCommand { get; private set; }
         public ICommand RemoveCommand { get; private set; }
         public ICommand SendCommand { get; private set; }
+        public ICommand SendAllCommand { get; private set; }
         public ICommand PrintCommand { get; private set; }
 
       
