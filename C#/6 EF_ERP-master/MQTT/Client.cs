@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using MQTTnet;
 using MQTTnet.Client;
 using MQTTnet.Client.Options;
 using MQTTnet.Server;
 using MyERP.Model;
+using Newtonsoft.Json;
 
 namespace MyERP.MQTT
 {
@@ -26,55 +28,119 @@ class Client
                 .WithCleanSession()
                 .Build();
 
-            await mqttClient.ConnectAsync(options, CancellationToken.None); // Since 3.0.5 with CancellationToken
-
+            try
+            {
+                await mqttClient.ConnectAsync(options, CancellationToken.None); // Since 3.0.5 with CancellationToken
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
-        public async Task<bool> SendInvoicePosition(Position Position)
+        public async Task<string> SendMqtt(string Payload, string Topic)
         {
-            if (mqttClient.IsConnected)
-            {
-                var Message = new MqttApplicationMessageBuilder()
-                    .WithTopic("invoice/position")
-                    .WithPayload($"ID: {Position.Id}; ItemNr: {Position.ItemNr} Price: {Position.Price} Qty: {Position.Qty}")
+            var Message = new MqttApplicationMessageBuilder()
+                    .WithTopic(Topic)
+                    .WithPayload(Payload)
                     .WithExactlyOnceQoS()
                     .WithRetainFlag()
                     .Build();
 
+            try
+            {
                 await mqttClient.PublishAsync(Message, CancellationToken.None); // Since 3.0.5 with CancellationToken
-                return true;
             }
-            return false;
-        }
+            catch (Exception e)
+            {
+                MessageBoxResult resultfaild = MessageBox.Show(e.ToString());
+                return e.ToString();
+            }
 
-        public async Task<bool> SendAllInvoicePosition(Invoice Invoice)
+            return "";
+        }
+        
+
+        public async Task<bool> SendInvoice(Invoice Invoices)
         {
             if (mqttClient.IsConnected)
             {
-                var Message = new MqttApplicationMessageBuilder()
-                    .WithTopic("invoice/rechnung")
-                    .WithPayload($"ID: {Invoice.Id} Date: {Invoice.InvoiceDate} Amount: {Invoice.Amount} Name: {Invoice.CustomerName} Adress: {Invoice.CustomerAddress}")
-                    .WithExactlyOnceQoS()
-                    .WithRetainFlag()
-                    .Build();
-
-                await mqttClient.PublishAsync(Message, CancellationToken.None); // Since 3.0.5 with CancellationToken
-                return true;
-            }
-            return false;
-        }
-
-        public async Task<bool> SendInvoice(Invoice Invoice)
-        {
-            if (mqttClient.IsConnected)
-            {
-                foreach (var Position in Invoice.Positions)
+                foreach (var Position in Invoices.Positions)
                 {
-                    await SendInvoicePosition(Position);
+                    string topic = $"invoice/position";
+                    string payload = $"ID: {Position.Id}; ItemNr: {Position.ItemNr} Price: {Position.Price} Qty: {Position.Qty}";
+                    await SendMqtt( payload, topic);
                 }
+                MessageBoxResult resultsend = MessageBox.Show("Send!");
                 return true;
             }
+            MessageBoxResult resultconnected = MessageBox.Show("Error, Not Connected! Try Restarting The Programm!");
             return false;
         }
+
+        public async Task<bool> SendAllPosition(Invoice Invoices)
+        {
+            if (mqttClient.IsConnected)
+            {
+                foreach (var Position in Invoices.Positions)
+                {
+                    string topic = $"invoice/position";
+                    string payload = $"ID: {Position.Id}; ItemNr: {Position.ItemNr} Price: {Position.Price} Qty: {Position.Qty}";
+                    await SendMqtt(payload, topic);
+                }
+
+
+                string topic2 = $"invoice/rechnung";
+                string payload2 = $"ID: {Invoices.Id} Date: {Invoices.InvoiceDate} Amount: {Invoices.Amount} Name: {Invoices.CustomerName} Adress: {Invoices.CustomerAddress}";
+                await SendMqtt(payload2, topic2);
+                MessageBoxResult resultsend = MessageBox.Show("Send!");
+                return true;
+            }
+            MessageBoxResult resultconnected = MessageBox.Show("Error, Not Connected! Try Restarting The Programm!");
+            return false;
+        }
+
+        public async Task<bool> SendInvoiceJson(Invoice Invoices)
+        {
+            if (mqttClient.IsConnected)
+            {
+                foreach (var Position in Invoices.Positions)
+                {
+                    string topic = $"invoice/position";
+                    //Json Konvertieren
+                    string payload = JsonConvert.SerializeObject(Invoices);
+                    await SendMqtt(payload, topic);
+                }
+                MessageBoxResult resultsend = MessageBox.Show("Send!");
+                return true;
+            }
+            MessageBoxResult resultconnected = MessageBox.Show("Error, Not Connected! Try Restarting The Programm!");
+            return false;
+
+            return true;
+        }
+
+        public async Task<bool> SendAllPositionJson(Invoice Invoices)
+        {
+            if (mqttClient.IsConnected)
+            {
+                foreach (var Position in Invoices.Positions)
+                {
+                    string topic = $"invoice/position";
+                    string payload = JsonConvert.SerializeObject(Position);
+                    await SendMqtt(payload, topic);
+                }
+
+
+                string topic2 = $"invoice/rechnung";
+                string payload2 = JsonConvert.SerializeObject(Invoices);
+                await SendMqtt(payload2, topic2);
+                MessageBoxResult resultsend = MessageBox.Show("Send!");
+                return true;
+            }
+            MessageBoxResult resultconnected = MessageBox.Show("Error, Not Connected! Try Restarting The Programm!");
+            return false;
+        }
+
     }
 }

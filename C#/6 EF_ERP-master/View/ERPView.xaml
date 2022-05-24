@@ -38,6 +38,7 @@
                 <ribbon:RibbonGroup Header="Allgemein">
                     <ribbon:RibbonMenuButton Label="Informationen" LargeImageSource="/Images/information.png"></ribbon:RibbonMenuButton>
                     <ribbon:RibbonMenuButton Label="Exit" LargeImageSource="/Images/exit-to-app.png"></ribbon:RibbonMenuButton>
+                    <ribbon:RibbonButton Label="Reconnect MQTT" LargeImageSource="/Images/exit-to-app.png" Command="{Binding Path=InitMQTT}"></ribbon:RibbonButton>
                 </ribbon:RibbonGroup>
             </ribbon:RibbonTab>
             <ribbon:RibbonTab Header="Druck">
@@ -103,6 +104,7 @@
                                 <ContextMenu>
                                     <MenuItem Header="Remove" Command="{Binding Path=RemoveCommand}"></MenuItem>
                                     <MenuItem Header="Send" Command="{Binding Path=SendAllCommand}"></MenuItem>
+                                    <MenuItem Header="Send as Json" Command="{Binding Path=SendAllJsonCommand}"></MenuItem>
                                 </ContextMenu>
                             </ListView.ContextMenu>
                         </ListView>
@@ -119,6 +121,7 @@
                                 <ContextMenu>
                                     <MenuItem Header="Remove" Command="{Binding Path=RemoveCommand}"></MenuItem>
                                     <MenuItem Header="Send" Command="{Binding Path=SendCommand}"></MenuItem>
+                                    <MenuItem Header="Send as Json" Command="{Binding Path=SendJsonCommand}"></MenuItem>
                                 </ContextMenu>
                             </ListView.ContextMenu>
                         </ListView>

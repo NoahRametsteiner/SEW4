@@ -1,4 +1,6 @@
-﻿namespace MyERP.Model
+﻿using Newtonsoft.Json;
+
+namespace MyERP.Model
 {
     class Position
     {
@@ -8,6 +10,7 @@
         public int Qty { get; set; }
         public double Price { get; set; }
         public int InvoiceId { get; set; }             // FK der Rechung
+        [JsonIgnore]
         public Invoice Invoice { get; set; }     // Referenz auf die Rechnung
     }
 }

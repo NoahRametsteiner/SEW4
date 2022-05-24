@@ -233,7 +233,23 @@ namespace MyERP.ViewModel
 
             SendAllCommand = new RelayCommand(e =>
             {
-                Client.SendInvoice(SelectedInvoice);
+                Client.SendAllPosition(SelectedInvoice);
+            });
+
+            SendJsonCommand = new RelayCommand(e =>
+            {
+                Client.SendInvoiceJson(SelectedInvoice);
+            });
+
+            SendAllJsonCommand = new RelayCommand(e =>
+            {
+                Client.SendAllPositionJson(SelectedInvoice);
+            });
+
+            InitMQTT = new RelayCommand(e =>
+            {
+                Client ClientReconnect = new Client();
+                ClientReconnect.Init(MQTTclientID, MQTTtcpServer, MQTTport);
             });
 
         }
@@ -288,9 +304,13 @@ namespace MyERP.ViewModel
         public ICommand RemoveCommand { get; private set; }
         public ICommand SendCommand { get; private set; }
         public ICommand SendAllCommand { get; private set; }
+        public ICommand SendJsonCommand { get; private set; }
+        public ICommand SendAllJsonCommand { get; private set; }
         public ICommand PrintCommand { get; private set; }
+        public ICommand InitMQTT { get; private set; }
 
-      
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void RaisePropertyChanged([CallerMemberName] String propertyName = "")
