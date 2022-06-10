@@ -1,0 +1,10 @@
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\bin\Debug\MQTT Client.exe.config
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\bin\Debug\MQTT Client.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\bin\Debug\MQTT Client.pdb
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\bin\Debug\MQTTnet.dll
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.csproj.AssemblyReference.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.csproj.CoreCompileInputs.cache
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.csproj.CopyComplete
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.exe
+C:\Users\Notsch\Desktop\ALL\SEW\4\C#\Übung\MQTT Client\MQTT Client\obj\Debug\MQTT Client.pdb
